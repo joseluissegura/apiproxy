@@ -18,3 +18,20 @@ servicios (r=) :
 ejemplo:
 http://localhost/factura.php?r=example&data={...}
 
+###los campos que el servicio calcula son:
+* MontoTotal
+* SubTotal
+* Impuesto.Monto
+* ResumenFactura.TotalMercanciasGravadas
+* ResumenFactura.TotalServGravados
+* ResumenFactura.TotalMercanciasExentas
+* ResumenFactura.TotalServExentos
+* ResumenFactura.TotalGravado
+* ResumenFactura.TotalExento
+* ResumenFactura.TotalVenta
+* ResumenFactura.TotalDescuentos
+* ResumenFactura.TotalImpuesto
+* ResumenFactura.TotalComprobante
+* Normativa.NumeroResolucion
+* Normativa.FechaResolucion
+
