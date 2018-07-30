@@ -1,5 +1,5 @@
 <?php
-include('factura_lib');
+include('factura_lib.php');
 /*
 $json = utf8_encode(file_get_contents("factura1.json"));
 $data = Factura::withJson($json);
