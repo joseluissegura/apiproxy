@@ -8,9 +8,12 @@
         "Identificacion":{
             "Tipo":{
                 "enum":{"01":"Cédula Física","02":"Cédula juridica","03":"DIMEX","04":"NITE"},
-                "regex": "\\d{9,12}"
+                "pad":2
             },
-            "Numero":{"regex":"\\d{9,12}"}
+            "Numero":{
+                "regex":"\\d{9,12}",
+                "pad":12
+            }
         },
         "NombreComercial":{"max":80},
         "Ubicacion":{
@@ -50,10 +53,11 @@
         "Identificacion":{
             "Tipo":{
                 "enum":{"01":"Cédula Física","02":"Cédula juridica","03":"DIMEX","04":"NITE"},
-                "regex": "\\d{9,12}"
+                "pad":2
             },
             "Numero":{
-                "regex":"\\d{9,12}"
+                "regex":"\\d{9,12}",
+                "pad":12
             }
         },
         "NombreComercial":{"max":80},
