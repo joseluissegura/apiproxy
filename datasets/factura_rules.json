@@ -1,5 +1,7 @@
 {
 "factura":{      
+    "Agencia":{"pad":3,"xml":1},
+    "Terminal":{"pad":5,"xml":1},
     "Clave":{"max":50},
     "NumeroConsecutivo":{"max":20},
     "FechaEmision":{"datetime":true},
@@ -113,7 +115,7 @@
                     },
                     "Codigo":{"max":20}
                 },
-                "Mercancia":{"enum":{"1":"Si"}},
+                "Mercancia":{"enum":{"1":"Si"},"xml":1},
                 "Cantidad":{"decimal":3},
 		"UnidadMedida":{}, 
 		"UnidadMedidaComercial":{"max":20},
