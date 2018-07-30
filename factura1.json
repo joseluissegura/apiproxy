@@ -1,0 +1,154 @@
+{      
+    "Clave":"123456789012345678901234567890123456789012345678901234567890",
+    "NumeroConsecutivo":"123456789012345678901234567890",
+    "FechaEmision":"2018-05-01T01:29:12Z",
+"Emisor":{
+        "Nombre":"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+        "Identificacion":{
+            "Tipo":"01",
+            "Numero":"101230123"
+        },
+        "NombreComercial":"McDonalds",
+        "Ubicacion":{
+		"Provincia":"1",	
+		"Canton":"1",
+		"Distrito":"1",	
+		"Barrio":"1",
+		"OtrasSenas":"100 nte de.."
+	},
+        "Telefono":{
+		"CodigoPais":"506",
+		"NumTelefono":"12347896"
+	},
+        "Fax":{
+		"CodigoPais":"506",
+		"NumTelefono":"12347896"
+	},
+        "CorreoElectronico":"ASDFASDFASDFASD"
+    },
+"Receptor":{
+        "Nombre":"ASDFASDF",
+        "Identificacion":{
+            "Tipo":"01",
+            "Numero":"301230123"
+        },
+        "NombreComercial":"BurgerKing",
+        "Ubicacion":{
+		"Provincia":"1",	
+		"Canton":"1",
+		"Distrito":"1",	
+		"Barrio":"1",
+		"OtrasSenas":"100 sur de.."
+	},
+        "Telefono":{
+		"CodigoPais":"506",
+		"NumTelefono":"12347896"
+	},
+        "Fax":{
+		"CodigoPais":"506",
+		"NumTelefono":"12347896"
+	},
+        "CorreoElectronico":"ASDFASDFASDFASD"
+    },
+    "CondicionVenta":"01",
+    "MedioPago":1,
+    "DetalleServicio":{
+        "LineaDetalle":[
+	{ 
+		"NumeroLinea":"1", 
+		"Codigo":{
+                    "Tipo":"01",
+                    "Codigo":"12345"
+                },
+		"Cantidad":"1000.2234",
+		"UnidadMedida":"Sp", 
+		"UnidadMedidaComercial":"piezas",
+		"Detalle":"coca colas",
+		"PrecioUnitario":"1000.10",
+		"MontoTotal":"10000.00",
+		"MontoDescuento":"100.00",
+		"NaturalezaDescuento":"contado",
+		"SubTotal":"9900.00",			
+		"Impuesto":[{
+			"Codigo":"01",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		},
+                {
+			"Codigo":"02",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		}],
+		"MontoTotalLinea":"11187"	
+	},
+	{ 
+		"NumeroLinea":"2", 
+		"Codigo":{
+                    "Tipo":"01",
+                    "Codigo":"12345"
+                },
+		"Cantidad":"4",
+		"UnidadMedida":"Sp", 
+		"UnidadMedidaComercial":"piezas",
+		"Detalle":"coca colas",
+		"PrecioUnitario":"1000.10",
+		"MontoTotal":"10000.00",
+		"MontoDescuento":"100.00",
+		"NaturalezaDescuento":"contado",
+		"SubTotal":"9900.00",			
+		"Impuesto":[{
+			"Codigo":"01",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		},
+                {
+			"Codigo":"02",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		}],
+		"MontoTotalLinea":"11187"	
+	},
+	{ 
+		"NumeroLinea":"3", 
+		"Codigo":{
+                    "Tipo":"01",
+                    "Codigo":"12345"
+                },
+		"Cantidad":"8",
+		"UnidadMedida":"Sp", 
+		"UnidadMedidaComercial":"piezas",
+		"Detalle":"coca colas",
+		"PrecioUnitario":"1000.10",
+		"MontoTotal":"10000.00",
+		"MontoDescuento":"100.00",
+		"NaturalezaDescuento":"contado",
+		"SubTotal":"9900.00",			
+		"Impuesto":[{
+			"Codigo":"01",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		},
+                {
+			"Codigo":"02",	
+                
+			"Tarifa":"13",
+			"Monto":"1287"
+		}],
+		"MontoTotalLinea":"11187"	
+	}
+    ]},
+    "ResumenFactura":{
+    },
+    "InformacionReferencia":{
+        "TipoDoc":"01",
+        "Numero":"123456789ADSFASDF",
+        "FechaEmision":"2018-05-01T01:29:12Z",
+        "Codigo":"01",
+        "Razon":"rezonable"
+    }
+}
