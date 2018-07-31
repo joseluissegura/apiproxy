@@ -56,7 +56,7 @@ switch ($func){
 
         $data = XMLSerializer::generateValidXmlFromObj($data,'FacturaElectronica');
         //file_put_contents("example1.xml",$data);
-        $status = Factura::isValid($data,'xsd/FacturaElectronica.xsd');
+        $status = Factura::isValid($data,'xsd/FacturaElectronica0.xsd');
         echo "{'status':'{$status}'}";
         break;
     default:
