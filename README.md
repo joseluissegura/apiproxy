@@ -15,6 +15,9 @@ servicios (r=) :
 * validate: valida json contra xsd no valida ninguna logica de negocio aun
 * saveXML:  guarda en el servidor el archivo xml y envia a hacienda el documento.  Devuelve la clave (consecutivo universal) y el consecutivo (por Emisor,Agencia,Terminal,Tipo de Documento
 
+Servicios prontos por salir:
+* pdf por clave: esta funcionalidad es para clientes que deseen que les impriman una factura en papel.
+
 ejemplo:
 http://localhost/factura.php?r=example&data={...}
 
