@@ -6,7 +6,7 @@ proxy FacturaElectronica
 * data = // este es el json con los datos de la factura
 
 servicios (r=) :
-* ack: tipo ping devuelve nack
+* ack: tipo ping devuelve nack.  Para que la aplicacion si lo desea utilice para verificar que el api esta instalado y funcionando
 * enums: trae los enums de los campos y algunas caracterisitcas como regex si se desean usar
 * struct:  trae una estructura json vacia del documento. Con el objeto de ayudar al integrador de la aplicacion a ver como es la estructura a recibir
 * example: trae una estructura json de ejemplo para guiarse. Estos son casos de estrcturas ya llenas de datos validas que hacienda acepta o acepto cuando se probo en sandbox 
