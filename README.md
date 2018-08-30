@@ -12,8 +12,8 @@ servicios (r=) :
 * example: trae una estructura json de ejemplo para guiarse. Estos son casos de estrcturas ya llenas de datos validas que hacienda acepta o acepto cuando se probo en sandbox 
 * download: baja un zip con los xml y su respuesta xml
 * calcula: calcula los totales y subtotales de la factura y devuelve el documento este es un proceso de loopback no va a hacienda ni es necesario para enviarlo a hacienda. Es solo de informacion para las aplicaciones que lo deseen usar
-* validate: valida json contra xsd no valida ninguna logica de negocio aun
-* saveXML:  guarda en el servidor el archivo xml y envia a hacienda el documento.  Devuelve la clave (consecutivo universal) y el consecutivo (por Emisor,Agencia,Terminal,Tipo de Documento
+* validate: valida json contra xsd no valida ninguna logica de negocio aun.  Es una validacion en el servidor.  Apoya a que se emitan menos documentos invalidos ya que le da la opcion a la aplicacion de verificar antes de enviar a hacienda.
+* saveXML:  guarda en el servidor el archivo xml y envia a hacienda el documento.  Devuelve la clave (consecutivo universal) y el consecutivo (por Emisor,Agencia,Terminal,Tipo de Documento) ademas del resto de la informacion enviada a hacienda.  
 
 Servicios prontos por salir:
 * pdf por clave: esta funcionalidad es para clientes que deseen que les impriman una factura en papel.
