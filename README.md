@@ -8,15 +8,16 @@ proxy FacturaElectronica
 servicios (r=) :
 * ack: tipo ping devuelve nack
 * enums: trae los enums de los campos y algunas caracterisitcas como regex si se desean usar
-* struct:  trae una estructura json vacia del documento
-* example: trae una estructura json de ejemplo para guiarse
-* download: baja un zip con los xml y su respuesta
+* struct:  trae una estructura json vacia del documento. Con el objeto de ayudar al integrador de la aplicacion a ver como es la estructura a recibir
+* example: trae una estructura json de ejemplo para guiarse. Estos son casos de estrcturas ya llenas de datos validas que hacienda acepta o acepto cuando se probo en sandbox 
+* download: baja un zip con los xml y su respuesta xml
 * calcula: calcula los totales y subtotales de la factura y devuelve el documento este es un proceso de loopback no va a hacienda ni es necesario para enviarlo a hacienda. Es solo de informacion para las aplicaciones que lo deseen usar
 * validate: valida json contra xsd no valida ninguna logica de negocio aun
 * saveXML:  guarda en el servidor el archivo xml y envia a hacienda el documento.  Devuelve la clave (consecutivo universal) y el consecutivo (por Emisor,Agencia,Terminal,Tipo de Documento
 
 Servicios prontos por salir:
 * pdf por clave: esta funcionalidad es para clientes que deseen que les impriman una factura en papel.
+* la documentacion de los reportes esta pendiente
 
 ejemplo:
 http://localhost/factura.php?r=example&data={...}
