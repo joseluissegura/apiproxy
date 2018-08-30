@@ -6,14 +6,14 @@ proxy FacturaElectronica
 * data = // este es el json con los datos de la factura
 
 servicios (r=) :
+* ack: tipo ping devuelve nack
 * enums: trae los enums de los campos y algunas caracterisitcas como regex si se desean usar
 * struct:  trae una estructura json vacia del documento
 * example: trae una estructura json de ejemplo para guiarse
-* save:    guarda en el servidor el archivo json
-* calcula: calcula los totales y subtotales de la factura
-* genXML:  convierte json a xml
-* saveXML:  guarda en el servidor el archivo xml
-* validate: valida json contra xsd
+* download: baja un zip con los xml y su respuesta
+* calcula: calcula los totales y subtotales de la factura y devuelve el documento este es un proceso de loopback no va a hacienda ni es necesario para enviarlo a hacienda. Es solo de informacion para las aplicaciones que lo deseen usar
+* validate: valida json contra xsd no valida ninguna logica de negocio aun
+* saveXML:  guarda en el servidor el archivo xml y envia a hacienda el documento.  Devuelve la clave (consecutivo universal) y el consecutivo (por Emisor,Agencia,Terminal,Tipo de Documento
 
 ejemplo:
 http://localhost/factura.php?r=example&data={...}
